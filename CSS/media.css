@@ -1,0 +1,30 @@
+/*  */
+
+    body{
+        background-color: rgb(252, 118, 114);
+    }
+    p{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+
+/*  */
+@media screen and (max-width:700px){
+    body{
+        background-color: rgb(217, 160, 243);
+    }
+    p{
+        font-family: cursive;
+    }
+}
+
+/*  */
+@media screen and (min-width:1500px){
+    body{
+        background-color: rgb(247, 177, 221);
+    }
+    p{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+}
+

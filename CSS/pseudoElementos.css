@@ -1,0 +1,8 @@
+p::after{
+    content: '--Hai humanos';
+}
+
+p::before{
+    content: '--Tatakae-';
+}
+

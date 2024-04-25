@@ -1,0 +1,50 @@
+.container{ 
+    height: 100vh;
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(6,auto);
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas: 
+    "header header header header header header"
+    "aside aside main main main main"
+    "aside aside main main main main"
+    /* Quando estão na mesma linha itens diferentes, eles SE MANTERÃO NA MESMA LINHA (ao lado um do outro) */
+    "main2 main2 main2 main2 aside2 aside2"
+    "main2 main2 main2 main2 aside2 aside2"
+    /* A quantidade em que os itens se repetem significa a QUANTIDADE DE COLUNAS */
+    "footer footer footer footer footer footer"
+    "footer footer footer footer footer footer"
+    /* As vezes em que se repetem igualmente as mesmas linhas, são a QUANTIDADE DE LINHAS */
+    ;
+    gap: 5px;
+}
+
+.box1{
+    grid-area: header;
+    background-color: rgb(139, 173, 235);
+}
+
+.box2{
+    grid-area: aside;
+    background-color: rgba(243, 170, 245, 0.977);
+}
+
+.box3{
+    grid-area: main;
+    background-color: rgb(217, 130, 248);
+}
+
+.box4{
+    grid-area: main2;
+    background-color: rgb(244, 132, 132);
+}
+
+.box5{
+    grid-area: aside2;
+    background-color: rgb(238, 236, 147);
+}
+
+.box6{
+    grid-area: footer;
+    background-color: rgb(155, 246, 194);
+}

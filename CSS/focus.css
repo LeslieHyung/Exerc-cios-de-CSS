@@ -1,0 +1,21 @@
+input:focus{
+    background-color: rgba(247, 195, 247, 0.839);
+    color: black;
+}
+
+/* a:link -- serve para mostrar um link ainda não visitado */
+a:link {
+    text-decoration: none;
+    color: rgb(247, 59, 91);
+}
+
+/* a:active -- serve para mostar o "clicar" */
+a:active{
+    font-size: 20px;
+    color: aqua;
+}
+
+/* a:visited -- serve para mostar links já visitados */
+a:visited{
+    color: rgb(245, 151, 201);
+}

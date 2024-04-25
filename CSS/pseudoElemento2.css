@@ -1,0 +1,10 @@
+/* ::first-letter --- Faz com que a primeira LETRA fique destacada */
+p::first-letter{
+    color: rgb(229, 113, 206);
+    font-size: 20px;
+    font-family: cursive;
+}
+
+p{
+    font-family: cursive;
+}

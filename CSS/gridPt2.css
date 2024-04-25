@@ -1,0 +1,74 @@
+.container{
+    display: grid;
+    height: 50vh;
+
+    /* background-color: rgb(193, 145, 238); */
+    /* border: 1px solid; */
+   
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5px; 
+    /* grid-auto-flow: column; */
+
+    /* row-gap: 20px; */
+    /* -- ROW-GAP --> Separação da parte HORIZONTAL (linha).*/
+
+    /* column-gap: 10px; */
+    /* -- COLUMN-GAP --> Separação da parte VERTICAL (coluna) */
+/* ------------------------------------------------------------------------ */
+    /* justify-items: center; */
+    /* JUSTIFY-ITEMS--> Alinha HORIZONTALMENTE os itens do Grid.*/
+/* -------------- */
+    /* align-items: center; */
+    /* ALIGN-ITEMS--> Alinha VERTICALMENTE os itens do Grid.*/
+/* -------------- */
+    /* place-items: center center; */
+    /* PLACE-ITEMS--> Define os dois Alinhamentos:
+    1- vertical (align-items) 
+    2- horizontal (justify-items) com uma única declaração.*/
+/* ------------------------------------------------------------------------ */
+    /*justify-content: center; 
+    Alinha o GRID COMPLETO ao longo do eixo HORIZONTAL do container do 
+   grid.*/
+/* -------------- */
+    /* align-content: center; 
+    Alinha o GRID COMPLETO ao longo do eixo VERTICAL do container do 
+   grid.*/
+/* -------------- */
+    /* place-content: center center; */
+    /* PLACE-CONTENT--> Define os dois Alinhamentos:
+    1- align-content (Vertical)
+    2- justify-content (Horizontal) com uma única declaração.*/
+}
+
+.box1{
+    background-color: rgb(120, 197, 225); 
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.box2{
+    background-color: rgb(230, 225, 158);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.box3{
+    background-color: rgb(158, 230, 206);
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.box4{
+    background-color: rgb(230, 158, 229);
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}

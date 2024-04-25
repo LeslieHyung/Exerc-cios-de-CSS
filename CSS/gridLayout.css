@@ -1,0 +1,42 @@
+
+
+.container{
+    height: 100vh;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    display: grid;
+    /* -- grid-template-rows --> Divide Linhas*/
+    /* -- grid-template-columns --> Divide Colunas */
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+    "header header header"
+    "aside main main"
+    "aside main main"
+    "aside main main"
+    "footer footer footer";
+
+    gap: 5px;
+}
+
+
+
+.box1{
+    grid-area: header;
+    background-color: rgb(195, 125, 230);
+}
+
+.box2{
+    grid-area: aside;
+    background-color: rgb(237, 160, 227);
+}
+
+.box3{
+    grid-area: main;
+    background-color: rgb(164, 221, 240);
+}
+
+.box4{
+    grid-area: footer;
+    background-color: rgb(227, 125, 125);
+}

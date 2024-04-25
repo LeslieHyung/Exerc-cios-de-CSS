@@ -1,0 +1,70 @@
+.container{
+    border: 3px solid black;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    direction: ltr;
+     /* -- DIRECTION --
+     Ele altera a direção onde os itens serão alocados:display:
+     -->RTL - direita
+     -->LTR - esquerda */
+
+    flex-direction: row;
+    /* -- PROPRIEDADE FLEX-DIRECTION -- 
+        A propriedade flex-direction configura a direção dos itens flexíveis, ou seja, ela estabelece o 
+    main-axis do container.*/
+    
+    /* flex-direction: row <-- Da esquerda para a direita -->*/
+    /* flex-direction: row-reverse <-- Da direita para a esquerda -->*/
+    /* flex-direction: column <-- De cima para baixo -->*/
+    /* flex-direction: column-reverse <-- De baixo para cima -->*/
+
+    flex-wrap: wrap;
+    /* -- FLEX-WRAP --
+     A propriedade flex-wrap configura se os itens serão exibidos em múltiplas linhas. Por padrão, 
+    os itens irão tentar encaixar em uma única linha(Ele faz um tipo de quebra de linha, ou seja, ela encaixa.)
+
+    -->nowrap (default): todos os itens serão dispostos em uma única linha.
+    -->wrap: os itens flex poderão ser dispostos em múltiplas linhas de cima para baixo.
+    -->wrap-reverse: os itens flex poderão ser dispostos em múltiplas linhas de baixo para cima*/
+    
+    justify-content: end;
+    /* -- JUSTIFY-CONTENT -- 
+     Ela define o alinhamento ao longo do main-axis (HORIZONTAL) do container.
+     --> Existem diversas formas de alinhamento.*/
+
+    align-items: center;
+    /* -- ALIGN-ITENS -- 
+     A propriedade align-itens define o comportamento padrão de como os itens flex estão dispostos 
+    ao longo do cross-axis (VERTICAL).
+    -->Existem várias formas de comportamento.*/
+}
+
+.box{
+    border: 1px solid;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+
+.box1{
+    background-color: rgb(240, 139, 193);
+    order: 0;
+    /* flex-grow: 3; */
+    /* -- FLEX-GROW --
+    A propriedade flex-grow define a capacidade de um item flex crescer, se necessário. Ela
+determina a quantidade de espaço disponível dentro do flex container que o item deve ocupar */
+}
+
+.box2{
+    background-color: rgb(184, 131, 233);  
+    order: 0; 
+    /* flex-grow: 1; */
+    
+}
+
+.box3{
+    background-color: rgb(156, 226, 249);
+    order: 0;
+    /* flex-grow: 1; */
+}
